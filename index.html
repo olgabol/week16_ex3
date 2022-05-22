@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div class="test">
+</div>
+<div class="test_2">
+</div>
+<div class="test_3">
+</div>
+
+<body>
+    <script>
+        const arr = ['js', 'css', 'html'];
+        document.querySelector('.test').innerHTML += arr[0];
+
+        const mass = [0, 1, false, 2, undefined, '', 3, null];
+        const filteredMass = mass.filter(el => el > 0);
+        document.querySelector('.test_2').innerHTML += filteredMass;
+
+        const newArr = [
+            [1, 2],
+            [1, 2, 3],
+            [1, 2, 3, 4]
+        ];
+        let number = newArr.findIndex(item => item.length > 3);
+        document.querySelector('.test_3').innerHTML += number;
+    </script>
+</body>
+
+</html>
